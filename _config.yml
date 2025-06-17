@@ -47,12 +47,11 @@ event:
 
   hero:
     links:
-      - text: "Apply"
+      - text: "Join our mailing list!"
         my_mlh:
-          client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+          href: "https://docs.google.com/forms/d/e/1FAIpQLSc0feSn0ATjL58NiR1eaq82YxFKzPsxHJCIxqxboVwSJtL5iA/viewform?usp=sf_link"
       - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSfWZgYqwD0btXIvs1F0X5xNbswk1PvaysFrVEGiqnBGVCaJrQ/viewform?usp=header"
 
   about:
     description: >
