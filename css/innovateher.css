@@ -1,5 +1,5 @@
 /*
-* InnovateHer Custom Theme 🎀
+* InnovateHer Custom Theme
 * Pastel Disco Updated – Cute, Modern, Not Childish
 */
 
@@ -13,27 +13,13 @@
 }
 
 body {
-  background: linear-gradient(135deg, #FFD6DC, #FFE5D9);
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow-x: hidden;
   font-size: 15px;
   color: #3E2C35;
-}
-
-/* Floating Stars Animation */
-@keyframes floatStar {
-  0% { transform: translateY(0); opacity: 0; }
-  50% { opacity: 1; }
-  100% { transform: translateY(-100vh); opacity: 0; }
-}
-
-.star {
-  position: fixed;
-  bottom: -20px;
-  animation: floatStar 10s infinite ease-in;
-  color: #FFCACC;
-  font-size: 20px;
-  opacity: 0;
-  z-index: 0;
 }
 
 /* Trust Badge */
