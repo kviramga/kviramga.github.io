@@ -67,7 +67,7 @@ section {
 
 .custom-hero {
   text-align: center;
-  padding-bottom: 4vh;
+  padding-bottom: 1vh;
   color: black;
   position: relative;
   z-index: 3;
@@ -75,7 +75,7 @@ section {
 
 .custom-hero-bg {
   background-color: rgba(255, 182, 193, 0.85); /* light pink */
-  padding: 50px 40px;
+  padding: 40px 40px;
   display: inline-block;
   border-radius: 25px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -86,7 +86,7 @@ section {
   display: block;
   font-family: 'Sacramento', cursive;
   font-size: 6rem;
-  font-weight: 400;
+  font-weight: 600;
   color: black;
 }
 
@@ -104,7 +104,7 @@ section {
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   border: 3px solid black;
-  background-color: transparent;
+  background-color: rgb(255, 182, 193);
   position: relative;
   cursor: pointer;
   color: black;
@@ -113,7 +113,7 @@ section {
 .cursor-icon {
   position: absolute;
   bottom: -15px;
-  right: 5px;
+  right: -5px;
   width: 30px;
   height: auto;
   pointer-events: none;
@@ -145,7 +145,7 @@ section {
   display: inline-block;
   font-size: 30px;
   font-weight: 600;
-  padding-bottom: 35px;
+  padding: 35px 5px;
   color: #fff;
 }
 
