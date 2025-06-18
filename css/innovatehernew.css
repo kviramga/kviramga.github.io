@@ -54,7 +54,7 @@ section {
  */
 
 .hero {
-  background-color: #F5699C;
+  background-color: transparent;
   min-height: 110vh;
 }
 
@@ -129,7 +129,7 @@ section {
 
 .about {
   border-width: 15px 0;
-  background-color: #fff;
+  background-color: transparent;
   padding: 130px 0;
   position: relative;
 }
@@ -182,7 +182,7 @@ section {
  */
 
 .faq {
-  background-color: #fff;
+  background-color: transparent;
   margin-top: 15px;
   padding: 100px 0;
   position: relative;
