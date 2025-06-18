@@ -1,21 +1,23 @@
 /*
-* InnovateHer Custom theme 🌸
-* Original by MLH, modified for our purposes.
+* InnovateHer Custom Theme 🎀
+* Updated to match the pastel disco aesthetic.
 */
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Quicksand:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+/* Global Styles */
 * {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
 }
 
 body {
-  background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+  background: linear-gradient(135deg, #FFE7F3, #E5D1FA);
   overflow-x: hidden;
+  font-size: 15px;
+  color: #4B4453;
 }
 
 /* Floating Stars Animation */
@@ -35,9 +37,7 @@ body {
   z-index: 0;
 }
 
-/*
- * Trust Badge
- */
+/* Trust Badge */
 #mlh-trust-badge {
   display: block;
   max-width: 100px;
@@ -49,11 +49,9 @@ body {
   z-index: 10000;
 }
 
-/*
- * Hero Section
- */
+/* Hero Section */
 .hero {
-  background: linear-gradient(to bottom, #FFB3C6, #FFDEE9);
+  background: linear-gradient(to bottom, #FFB3C6, #FFE7F3);
   min-height: 110vh;
   position: relative;
   z-index: 1;
@@ -64,10 +62,10 @@ body {
 }
 
 .hero hr {
-  border-top: 15px solid #A084CA;
+  border-top: 10px solid #D8B4F8;
   margin: 0;
   position: relative;
-  top: -14px;
+  top: -12px;
 }
 
 .hero .wrapper {
@@ -77,25 +75,25 @@ body {
 
 .hero .wrapper h1 {
   font-family: 'Comic Neue', cursive;
-  background: rgba(255, 255, 255, 0.4);
+  background: #FFF4B2;
   display: inline-block;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
-  letter-spacing: -2px;
-  padding: 10px 30px;
-  border-radius: 20px;
-  color: #5A3E36;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: #4B4453;
+  border: 2px solid #D8B4F8;
 }
 
 .hero .wrapper h2 {
-  font-size: 28px;
-  font-weight: 200;
-  color: #4B4453;
+  font-size: 20px;
+  font-weight: 400;
+  color: #6D597A;
 }
 
 .hero .wrapper h3 {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
   padding-bottom: 35px;
   color: #6D597A;
 }
@@ -105,24 +103,23 @@ body {
 }
 
 .hero .buttons a {
-  background: #FFB3C6;
-  border: 4px dashed #A084CA;
+  background: #FFD6A5;
+  border: 3px dashed #D8B4F8;
   color: #4B4453;
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 12px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 40px;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 50px;
-  box-shadow: 2px 2px 0 #A084CA;
+  border-radius: 40px;
+  box-shadow: 2px 2px 0 #D8B4F8;
   transition: all 0.2s ease;
 }
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #A084CA;
+  background-color: #D8B4F8;
   color: #fff;
   transform: scale(1.05);
 }
@@ -131,21 +128,19 @@ body {
   margin-right: 10px;
 }
 
-/*
- * About Section
- */
+/* About Section */
 .about {
-  background: #fff0f5;
+  background: #fffafa;
   padding: 130px 0;
   position: relative;
-  border-top: 10px dashed #FEC8D8;
-  border-bottom: 10px dashed #FEC8D8;
+  border-top: 10px dashed #FFD6A5;
+  border-bottom: 10px dashed #FFD6A5;
 }
 
 .about p {
   color: #4B4453;
-  font-weight: 600;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.6em;
   letter-spacing: -.3px;
 }
@@ -155,9 +150,7 @@ body {
   text-transform: uppercase;
 }
 
-/*
- * Info Section
- */
+/* Info Section */
 .info {
   background-color: #ffffff;
   margin-top: 15px;
@@ -169,15 +162,16 @@ body {
 .info .item {
   padding: 40px;
   margin-bottom: 40px;
-  background: #fffafa;
+  background: #FFF4B2;
+  border: 2px solid #FFD6A5;
   border-radius: 25px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 5px 5px 0 #D8B4F8;
   text-align: center;
 }
 
 .info .item h1 {
   font-family: 'Comic Neue', cursive;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   margin: 20px 0;
   color: #6D597A;
@@ -189,13 +183,11 @@ body {
 }
 
 .info .item p {
-  font-size: 20px;
+  font-size: 18px;
   color: #5A3E36;
 }
 
-/*
- * FAQ Section
- */
+/* FAQ Section */
 .faq {
   background-color: #fef6f9;
   margin-top: 15px;
@@ -223,7 +215,7 @@ body {
 .faq .question h2 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: #6D597A;
 }
 
@@ -234,7 +226,7 @@ body {
 }
 
 .faq .question p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   color: #4B4453;
 }
@@ -244,15 +236,14 @@ body {
   width: 300px;
 }
 
-/*
- * Footer Section
- */
+/* Footer Section */
 .footer {
-  background: linear-gradient(to right, #FFB3C6, #FFC6E0);
-  color: #5A3E36;
+  background: linear-gradient(to right, #FFB3C6, #FFD6A5);
+  color: #4B4453;
   padding: 30px 0;
   text-align: center;
   font-family: 'Comic Neue', cursive;
+  font-size: 14px;
 }
 
 .footer img {
@@ -261,23 +252,43 @@ body {
 }
 
 .footer h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   margin: 0;
 }
 
+.footer h3::after {
+  content: " • InnovateHer 2026";
+}
+
 .footer h3 a {
-  color: #5A3E36;
+  color: #4B4453;
   text-decoration: underline dotted;
+}
+
+/* Socials */
+.footer .socials {
+  margin-top: 10px;
+}
+
+.footer .socials a {
+  margin: 0 8px;
+  font-size: 20px;
+  color: #4B4453;
+  transition: 0.3s ease;
+}
+
+.footer .socials a:hover {
+  color: #A084CA;
 }
 
 /* Responsive */
 @media(max-width: 768px) {
   .hero .buttons a {
-    border-width: 4px;
+    border-width: 3px;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px auto;
   }
 
@@ -290,3 +301,4 @@ body {
     top: -6px;
   }
 }
+
