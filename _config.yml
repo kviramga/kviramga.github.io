@@ -1,311 +1,115 @@
-/* Caprasimo Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+# --------------
+# -- Settings --
+# --------------
 
-/* Roboto Mono Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+# If you are hosting in a sub-folder, for example: https://mlh.github.io/mlh-hackathon-boilerplate/,
+# you must specify it as the baseurl
+# If you hosting as a root, for example: htttps://[github username].github.io, then leave it blank
+# baseurl: "/mlh-hackathon-boilerplate"
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+# uncomment the next line if you are hosting as a root and not sub-folder
+# for example, when runnig locally at http://127.0.0.1:4000/
+baseurl: ""
 
-/*
- * Primary Blue: #44D5FF;
- * Dark Blue: #0F2C34;
- * Primary Pink: #FF7FA8;
- */
+# If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
+# If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
+url: "https://kviramga.github.io"
 
-* {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  color: #f0f0f0;
-}
+# The ability to use custom themes.
+style:
+  theme: "innovatehernew"
 
-h1 {
-  font-family: 'Caprasimo', cursive;
-  color: #fff;
-}
+# This will help you track who's visiting your website.
+tracking:
+  google_analytics: "UA-43729070-14"
 
-body {
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
+# Let people connect & engage with you through social media.
+social:
+  insta_handle: "innovateherhacks"
 
-section {
-  overflow-x: hidden;
-}
+# This is Search Engine Optimization. It'll help your website look better on search.
+seo:
+  title:       "InnovateHer | 7-8 February 2026"
+  description: "Join us for InnovateHer, Purdue University's annual women-centric hackathon! Students of all skill levels will come together to learn, build, and connect through tech. Expect exciting workshops, inspiring mentors, and a supportive space to bring your ideas to life."
+  image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
-/*
- * Trust Badge
- */
-#mlh-trust-badge {
-  display: block;
-  max-width: 100px;
-  min-width: 60px;
-  position: fixed;
-  right: 50px;
-  top: 0;
-  width: 10%;
-  z-index: 10000;
-}
+# Event information.
+event:
+  name:        "InnovateHer Hackathon"
+  date:        "7-8 February 2026"
+  location:    "WALC, Purdue University"
 
-/*
- * Hero Section
- */
-.hero {
-  background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 182, 193, 0.85) 100%),
-    url('../images/background.JPG') no-repeat center center;
-  background-size: cover;
-  min-height: 110vh;
-  position: relative;
-}
+  trust_badge:
+    year:   "2026"  # season year
+    region: "eu"    # "na" or "eu"
+    color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
-.hero img {
-  max-width: 400px;
-}
+  hero:
+    links:
+      - text: "Join our mailing list!"
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSc0feSn0ATjL58NiR1eaq82YxFKzPsxHJCIxqxboVwSJtL5iA/viewform?usp=sf_link"
+      - text: "Sponsor"
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSfWZgYqwD0btXIvs1F0X5xNbswk1PvaysFrVEGiqnBGVCaJrQ/viewform?usp=header"
 
-.hero hr {
-  border-top: 3px solid #0F2C34;
-  margin: 0;
-  position: relative;
-  top: -10px;
-}
-.custom-hero {
-  z-index: 3;
-  position: relative;
-}
-}
+  about:
+    description: >
+      InnovateHer is a women-centric hackathon hosted at Purdue University that empowers students to learn, build, and innovate together. Through mentorship, workshops, and a welcoming community, we aim to foster creativity, confidence, and collaboration in tech.
 
-.hero-script {
-  display: block;
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-}
+  # Info Sections
+  info:
+    sections:
+      - image: "images/image1.png"
+        title: "LEARN."
+        description: >
+          Explore new technologies and workshops led by industry professionals and fellow students. Whether you're a beginner or experienced hacker, there's something for everyone to discover.
+      - image: "images/image2.png"
+        title: "BUILD."
+        description: >
+          Collaborate with a team to turn your ideas into reality. Code, design, prototype, and bring innovative solutions to life during 24 hours of creativity.
+      - image: "images/image3.png"
+        title: "SHARE."
+        description: >
+          Present your project to judges, peers, and tech mentors. Celebrate what you've created and inspire others with your ideas, passion, and hard work.
 
-.hero-tag {
-  display: block;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-size: 6rem;
-}
+  # Frequently asked questions.
+  faq:
+    - question: "What is a hackathon?"
+      answer: >
+        A hackathon is an invention marathon. Students come together to build cool
+        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
+    - question: "How much does it cost?"
+      answer: >
+        Nothing. Attending a hackathon is free.
+    - question: "Do I need to be a student to attend?"
+      answer: >
+        Yes. Only students who are currently enrolled at a college/university or
+        have graduated within the past 12 months are eligible to attend.
+    - question: "Where is the event?"
+      answer: >
+        The event is being hosted at the Wilmeth Active Learning Center at Purdue University.
+    - question: "What is Major League Hacking?"
+      answer: >
+        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
+        We work with over 200 Member Events and empower over 70,000 students every year.
+    - question: "Is there a code of conduct?"
+      answer: >
+        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
 
-.hero-start {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-family: 'Space Mono', monospace;
-  font-size: 1.2rem;
-  border: 2px solid black;
-  background-color: transparent;
-  position: relative;
-  cursor: pointer;
-}
+  # This is the message you'll receive once you've registered.
+  register:
+    message: >
+      You'll receive more information closer to the hackathon.
 
-.cursor-icon {
-  position: absolute;
-  bottom: -20px;
-  right: -30px;
-  width: 30px;
-  height: auto;
-  pointer-events: none;
-}
+# ----------------------------------------------------
+# -- Ignore this unless you know what you're doing. --
+# ----------------------------------------------------
 
-.hero .wrapper {
-  padding-top: 30vh;
-  text-align: center;
-}
-
-.hero .wrapper h1 {
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  font-size: 70px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  padding: 10px 30px;
-  color: #fff;
-}
-
-.hero .wrapper h3 {
-  color: #eee;
-}
-
-.hero .wrapper h3 {
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 600;
-  padding-bottom: 35px;
-  color: #fff;
-}
-
-.hero .buttons {
-  margin: 40px 0;
-}
-
-.hero .buttons a {
-  background: #fff;
-  border: 1px solid #0F2C34;
-  border-radius: 40px;
-  color: #0F2C34;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 10px 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-}
-
-.hero .buttons a:hover,
-.hero .buttons a:focus {
-  background-color: rgba(255, 182, 193);
-  color: #fff;
-}
-
-.hero .buttons a:not(:last-child) {
-  margin-right: 10px;
-}
-
-/*
- * About Section
- */
-.about {
-  background-color: rgba(255, 182, 193, 0.85);
-  color: rgba(255, 182, 193, 0.85);
-  padding: 130px 0;
-}
-
-.about p {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.6em;
-  letter-spacing: -0.3px;
-  color: #0F2C34;
-}
-
-.about p span {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/*
- * Info Section
- */
-.info {
-  background-color: #ffffff;
-  padding: 100px 0;
-  color: #0F2C34;
-}
-
-.info .item {
-  padding: 20px;
-}
-
-.info .item h1 {
-  font-family: 'Caprasimo', cursive;
-  font-size: 45px;
-  font-weight: 600;
-  margin: 20px 0;
-  color: #0F2C34;
-}
-
-.info .item img {
-  max-width: 220px;
-}
-
-.info .item p {
-  font-size: 20px;
-  color: #0F2C34;
-}
-
-/*
- * FAQ Section
- */
-.faq {
-  background-color: #ffffff;
-  padding: 100px 0;
-  color: #0F2C34;
-}
-
-.faq h1 {
-  font-family: 'Caprasimo', cursive;
-  font-size: 45px;
-  font-weight: 700;
-  margin: 30px 0;
-  color: #0F2C34;
-}
-
-.faq .question h2 {
-  font-family: 'Caprasimo', cursive;
-  font-weight: 600;
-  font-size: 26px;
-  color: #0F2C34;
-}
-
-.faq .question hr {
-  border-top: 3px solid #0F2C34;
-  margin: 20px 0;
-  width: 80px;
-}
-
-.faq .question p {
-  font-size: 18px;
-  line-height: 1.5em;
-  color: #0F2C34;
-}
-
-.faq img {
-  margin-bottom: -2px;
-  margin-top: 40px;
-  width: 300px;
-}
-
-/*
- * Footer Section
- */
-.footer {
-  background-color: #F5699C;
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
-}
-
-.footer img {
-  max-width: 250px;
-  margin-bottom: 15px;
-}
-
-.footer h3 {
-  font-family: 'Caprasimo', cursive;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 0;
-  color: #fff;
-}
-
-.footer h3 a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*
- * Responsive
- */
-@media(max-width: 768px) {
-  .hero .buttons a {
-    border-width: 2px;
-    display: block;
-    font-size: 18px;
-    margin: 5px auto;
-    width: fit-content;
-  }
-
-  .hero img {
-    width: 250px;
-  }
-
-  .hero hr {
-    border-top-width: 2px;
-    top: -8px;
-  }
-}
+markdown: kramdown
+exclude:
+ - node_modules
+ - gulpfile.js
+ - Gemfile
+ - Gemfile.lock
+ - package.json
+ - README.md
+ - CNAME
