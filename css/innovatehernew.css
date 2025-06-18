@@ -141,7 +141,7 @@ section {
   padding: 10px 30px;
   margin: 10;
   line-height: 1;
-  color: #fff;
+  color: black;
 }
 
 .hero .wrapper h3 {
@@ -176,7 +176,7 @@ section {
   text-transform: uppercase;
 }
 .about .buttons {
-  margin: 40px 40px;
+  margin: 80px 20px;
 }
 
 .about .buttons a {
@@ -280,7 +280,7 @@ section {
  * Footer Section
  */
 .footer {
-  background-color: #F5699C;
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   padding: 30px 0;
   text-align: center;
@@ -292,7 +292,7 @@ section {
 }
 
 .footer h3 {
-  font-family: 'Caprasimo', cursive;
+  font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
