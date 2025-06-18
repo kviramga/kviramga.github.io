@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 /* Color Palette */
@@ -75,7 +75,7 @@ section {
 
 .hero-script {
   display: block;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Sacramento', cursive;
   font-size: 3rem;
   color: black;
 }
