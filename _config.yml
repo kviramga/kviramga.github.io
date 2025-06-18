@@ -36,7 +36,6 @@ seo:
 # Event information.
 event:
   name:        "InnovateHer Hackathon"
-  description: "Join us for InnovateHer, Purdue University's annual women-centric hackathon! Students of all skill levels will come together to learn, build, and connect through tech. Expect exciting workshops, inspiring mentors, and a supportive space to bring your ideas to life."
   date:        "7-8 February 2026"
   location:    "WALC, Purdue University"
 
