@@ -170,6 +170,14 @@ section {
   margin-right: 10px;
 }
 
+.custom-hero-bg {
+  background-color: rgba(255, 182, 193, 0.95); /* light pink */
+  padding: 40px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
 /*
  * About Section
  */
@@ -326,5 +334,10 @@ section {
     width: 20px;
     bottom: -15px;
     right: -20px;
+  }
+  @media (max-width: 768px) {
+  .custom-hero-bg {
+    padding: 25px 20px;
+    border-radius: 20px;
   }
 }
