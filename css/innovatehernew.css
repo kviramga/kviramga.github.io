@@ -83,20 +83,17 @@ section {
   color: #fff;
 }
 
-.hero .wrapper h2,
 .hero .wrapper h3 {
   color: #eee;
 }
 
-.hero .wrapper h2 {
-  font-size: 15px;
-  font-weight: 400;
-}
-
 .hero .wrapper h3 {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 35px;
+  color: #fff;
 }
 
 .hero .buttons {
@@ -131,7 +128,7 @@ section {
  * About Section
  */
 .about {
-  background-color: #ffffff;
+  background-color: rgba(255, 182, 193, 0.85);
   color: rgba(255, 182, 193, 0.85);
   padding: 130px 0;
 }
