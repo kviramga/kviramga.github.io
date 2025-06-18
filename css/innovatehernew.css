@@ -76,9 +76,9 @@ section {
 .hero .wrapper h1 {
   background: rgba(0, 0, 0, 0.5);
   display: inline-block;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   padding: 10px 30px;
   color: #fff;
 }
@@ -89,13 +89,13 @@ section {
 }
 
 .hero .wrapper h2 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 }
 
 .hero .wrapper h3 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   padding-bottom: 35px;
 }
 
