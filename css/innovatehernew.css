@@ -152,7 +152,7 @@ section {
  */
 
 .info {
-  background-color: #fff;
+  background-color: transparent;
   margin-top: 15px;
   padding: 100px 0;
   position: relative;
