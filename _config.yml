@@ -30,13 +30,13 @@ social:
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
   title:       "InnovateHer | 7-8 February 2026"
-  description: "This is a placeholder website for InnovateHer."
+  description: "Join us for InnovateHer, Purdue University's annual women-centric hackathon! Students of all skill levels will come together to learn, build, and connect through tech. Expect exciting workshops, inspiring mentors, and a supportive space to bring your ideas to life."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
   name:        "InnovateHer Hackathon"
-  description: "This is the placeholder website for InnovateHer. ADD ACTUAL TEXT LATER."
+  description: "Join us for InnovateHer, Purdue University's annual women-centric hackathon! Students of all skill levels will come together to learn, build, and connect through tech. Expect exciting workshops, inspiring mentors, and a supportive space to bring your ideas to life."
   date:        "7-8 February 2026"
   location:    "WALC, Purdue University"
 
@@ -54,8 +54,7 @@ event:
 
   about:
     description: >
-      InnovateHer is a women-centric hackathon hosted at Purdue University.
-      DESCRIBE INNOVATE HER HERE.
+      InnovateHer is a women-centric hackathon hosted at Purdue University that empowers students to learn, build, and innovate together. Through mentorship, workshops, and a welcoming community, we aim to foster creativity, confidence, and collaboration in tech.
 
   # Info Sections
   info:
@@ -63,15 +62,15 @@ event:
       - image: "images/image1.png"
         title: "LEARN."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Explore new technologies and workshops led by industry professionals and fellow students. Whether you're a beginner or experienced hacker, there's something for everyone to discover.
       - image: "images/image2.png"
         title: "BUILD."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Collaborate with a team to turn your ideas into reality. Code, design, prototype, and bring innovative solutions to life during 24 hours of creativity.
       - image: "images/image3.png"
         title: "SHARE."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Present your project to judges, peers, and tech mentors. Celebrate what you've created and inspire others with your ideas, passion, and hard work.
 
   # Frequently asked questions.
   faq:
@@ -88,7 +87,7 @@ event:
         have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        The event is being hosted at [insert venue location here].
+        The event is being hosted at the Wilmeth Active Learning Center at Purdue University.
     - question: "What is Major League Hacking?"
       answer: >
         Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
