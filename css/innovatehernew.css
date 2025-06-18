@@ -3,10 +3,10 @@
 */
 
 /* Pacifico Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 /* Space Mono Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 /*
  * Primary Blue: #44D5FF;
@@ -15,16 +15,16 @@
  */
 
 * {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
 }
 
 h1, h2 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Caprasimo', cursive;
 }
 
 body {
-  background-image: url('images/background.jpg');
+  background-image: url('../images/background.JPG');
   background-size: cover;        /* Scales the image to cover the whole page */
   background-position: center;   /* Centers the image */
   background-repeat: no-repeat;  /* Prevents the image from repeating */
