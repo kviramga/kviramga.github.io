@@ -1,34 +1,43 @@
 /*
-* InnovateHer Custom Style
-* Based on MLH Boilerplate
+* InnovateHer Custom theme 🌸
+* Original by MLH, modified for our purposes.
 */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-/* Colors:
- * Pink Gradient: #F5699C → #FF7FA8
- * Dark Accent: #0F2C34
- */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #F5699C;
-}
-
-section {
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
   overflow-x: hidden;
 }
 
-/* Trust Badge */
+/* Floating Stars Animation */
+@keyframes floatStar {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.star {
+  position: fixed;
+  bottom: -20px;
+  animation: floatStar 10s infinite ease-in;
+  color: #fffacd;
+  font-size: 20px;
+  opacity: 0;
+  z-index: 0;
+}
+
+/*
+ * Trust Badge
+ */
 #mlh-trust-badge {
   display: block;
   max-width: 100px;
@@ -40,11 +49,14 @@ section {
   z-index: 10000;
 }
 
-/* Hero Section */
+/*
+ * Hero Section
+ */
 .hero {
-  background: linear-gradient(135deg, #F5699C, #FF7FA8);
+  background: linear-gradient(to bottom, #FFB3C6, #FFDEE9);
   min-height: 110vh;
   position: relative;
+  z-index: 1;
 }
 
 .hero img {
@@ -52,7 +64,7 @@ section {
 }
 
 .hero hr {
-  border-top: 15px solid #0F2C34;
+  border-top: 15px solid #A084CA;
   margin: 0;
   position: relative;
   top: -14px;
@@ -64,24 +76,28 @@ section {
 }
 
 .hero .wrapper h1 {
-  background: rgba(255, 255, 255, 0.3);
+  font-family: 'Comic Neue', cursive;
+  background: rgba(255, 255, 255, 0.4);
   display: inline-block;
   font-size: 60px;
   font-weight: 800;
   letter-spacing: -2px;
   padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
+  color: #5A3E36;
 }
 
 .hero .wrapper h2 {
   font-size: 28px;
   font-weight: 200;
+  color: #4B4453;
 }
 
 .hero .wrapper h3 {
   font-size: 20px;
   font-weight: 200;
   padding-bottom: 35px;
+  color: #6D597A;
 }
 
 .hero .buttons {
@@ -89,48 +105,49 @@ section {
 }
 
 .hero .buttons a {
-  background: #fff;
-  border: 10px solid #0F2C34;
-  border-radius: 40px;
-  color: #0F2C34;
+  background: #FFB3C6;
+  border: 4px dashed #A084CA;
+  color: #4B4453;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  padding: 10px 70px;
+  padding: 12px 50px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 50px;
+  box-shadow: 2px 2px 0 #A084CA;
+  transition: all 0.2s ease;
 }
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #0F2C34;
+  background-color: #A084CA;
   color: #fff;
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 127, 168, 0.6);
 }
 
 .hero .buttons a:not(:last-child) {
   margin-right: 10px;
 }
 
-/* About Section */
+/*
+ * About Section
+ */
 .about {
-  background-color: #fff0f5;
+  background: #fff0f5;
   padding: 130px 0;
   position: relative;
-  text-align: center;
+  border-top: 10px dashed #FEC8D8;
+  border-bottom: 10px dashed #FEC8D8;
 }
 
 .about p {
-  color: #0F2C34;
+  color: #4B4453;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.6em;
-  letter-spacing: -0.3px;
-  max-width: 800px;
-  margin: auto;
+  letter-spacing: -.3px;
 }
 
 .about p span {
@@ -138,96 +155,104 @@ section {
   text-transform: uppercase;
 }
 
-/* Info Section */
+/*
+ * Info Section
+ */
 .info {
   background-color: #ffffff;
   margin-top: 15px;
   padding: 100px 0;
-  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .info .item {
-  padding: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  background: #fffafa;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .info .item h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 48px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 45px;
   font-weight: 700;
   margin: 20px 0;
-  color: #F5699C;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  color: #6D597A;
 }
 
 .info .item img {
   max-width: 220px;
+  margin-bottom: 20px;
 }
 
 .info .item p {
   font-size: 20px;
+  color: #5A3E36;
 }
 
-/* FAQ Section */
+/*
+ * FAQ Section
+ */
 .faq {
-  background-color: #fff0f5;
+  background-color: #fef6f9;
   margin-top: 15px;
   padding: 100px 0;
   position: relative;
-  text-align: center;
 }
 
 .faq h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-weight: 700;
-  font-size: 48px;
-  color: #F5699C;
   margin: 30px 0;
+  text-align: center;
+  color: #5A3E36;
+}
+
+.faq .question {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .faq .question h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  margin-top: 40px;
-  position: relative;
-}
-
-.faq .question h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background: #FF7FA8;
-  margin: 10px auto;
-  border-radius: 2px;
+  color: #6D597A;
 }
 
 .faq .question hr {
-  border-top: 8px solid #0F2C34;
-  margin: 20px auto;
-  width: 80px;
+  border-top: 5px dotted #A084CA;
+  margin: 20px 0;
+  width: 60px;
 }
 
 .faq .question p {
   font-size: 18px;
   line-height: 1.5em;
-  max-width: 700px;
-  margin: auto;
+  color: #4B4453;
 }
 
 .faq img {
-  margin-bottom: -2px;
   margin-top: 40px;
   width: 300px;
 }
 
-/* Footer Section */
+/*
+ * Footer Section
+ */
 .footer {
-  background-color: #F5699C;
-  color: #fff;
+  background: linear-gradient(to right, #FFB3C6, #FFC6E0);
+  color: #5A3E36;
   padding: 30px 0;
   text-align: center;
+  font-family: 'Comic Neue', cursive;
 }
 
 .footer img {
@@ -236,7 +261,6 @@ section {
 }
 
 .footer h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -244,18 +268,17 @@ section {
 }
 
 .footer h3 a {
-  color: #fff;
-  text-decoration: underline;
+  color: #5A3E36;
+  text-decoration: underline dotted;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media(max-width: 768px) {
   .hero .buttons a {
-    border-width: 8px;
+    border-width: 4px;
     display: block;
     font-size: 20px;
-    margin: 5px auto;
-    width: 80%;
+    margin: 10px auto;
   }
 
   .hero img {
@@ -263,13 +286,7 @@ section {
   }
 
   .hero hr {
-    border-top-width: 8px;
-    top: -8px;
-  }
-
-  .about p,
-  .faq .question p {
-    font-size: 18px;
-    padding: 0 20px;
+    border-top-width: 6px;
+    top: -6px;
   }
 }
