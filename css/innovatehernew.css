@@ -17,9 +17,8 @@
   color: #f0f0f0;
 }
 
-h1 {
-  font-family: 'Caprasimo', cursive;
-  color: #fff;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,9 +31,12 @@ section {
   overflow-x: hidden;
 }
 
-/*
- * Trust Badge
- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Trust Badge */
 #mlh-trust-badge {
   display: block;
   max-width: 80px;
@@ -46,9 +48,7 @@ section {
   z-index: 10000;
 }
 
-/*
- * Hero Section
- */
+/* Hero Section */
 .hero {
   background: url('/images/background.JPG') no-repeat center center;
   background-size: cover;
@@ -72,7 +72,7 @@ section {
 }
 
 .custom-hero-bg {
-  background-color: rgba(255, 182, 193, 0.9); /* light pink */
+  background-color: rgba(255, 182, 193, 0.9);
   padding: 40px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -110,9 +110,9 @@ section {
   position: relative;
   cursor: pointer;
   color: black;
-  text-decoration: none; /* remove underline for <a> */
-  display: inline-block; /* ensures anchor behaves like button */
-  border-radius: 12px; /* optional: make it look more like a button */
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
 }
 
 .cursor-icon {
@@ -124,7 +124,6 @@ section {
   pointer-events: none;
 }
 
-/* Optional image styling */
 .hero img {
   max-width: 400px;
 }
@@ -136,8 +135,8 @@ section {
   top: -10px;
 }
 
-/* Existing headings/buttons */
 .hero .wrapper h1 {
+  font-family: 'Caprasimo', cursive;
   font-size: 150px;
   font-weight: 600;
   letter-spacing: 3px;
@@ -158,11 +157,9 @@ section {
   color: black;
 }
 
-/*
- * About Section
- */
+/* About Section */
 .about {
-  background-color: rgba(255, 127, 168,0.9);
+  background-color: rgba(255, 127, 168, 0.9);
   padding: 130px 0;
 }
 
@@ -192,8 +189,8 @@ section {
   display: inline-block;
   font-size: 22px;
   font-weight: 700;
-  padding: 16px 40px; /* More vertical & horizontal padding */
-  margin: 16px 16px;  /* Less space around the button */
+  padding: 16px 40px;
+  margin: 16px 16px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -210,9 +207,7 @@ section {
   margin-right: 10px;
 }
 
-/*
- * Info Section
- */
+/* Info Section */
 .info {
   background-color: #ffffff;
   padding: 100px 0;
@@ -240,11 +235,9 @@ section {
   color: #0F2C34;
 }
 
-/*
- * FAQ Section
- */
+/* FAQ Section */
 .faq {
-  background-color: rgba(255, 182, 193, 0.85); /* Light pink */
+  background-color: rgba(255, 182, 193, 0.85);
   padding: 100px 0;
   color: #0F2C34;
 }
@@ -282,9 +275,7 @@ section {
   width: 300px;
 }
 
-/*
- * Footer Section
- */
+/* Footer Section */
 .footer {
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
@@ -311,16 +302,31 @@ section {
   text-decoration: none;
 }
 
-/*
- * Responsive
- */
+/* Responsive Enhancements */
 @media (max-width: 768px) {
-  .about .buttons a {
-    border-width: 2px;
-    display: block;
-    font-size: 18px;
-    margin: 5px auto;
-    width: fit-content;
+  .hero .wrapper {
+    padding-top: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero .wrapper h1 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+
+  .hero .wrapper h3 {
+    font-size: 22px;
+    padding: 20px 15px;
+  }
+
+  .hero-tag {
+    font-size: 3rem;
+  }
+
+  .hero-script {
+    font-size: 2.5rem;
   }
 
   .hero img {
@@ -332,12 +338,11 @@ section {
     top: -8px;
   }
 
-  .hero-tag {
-    font-size: 4rem;
-  }
-
-  .hero-script {
-    font-size: 2rem;
+  .hero-start {
+    font-size: 1rem;
+    padding: 8px 16px;
+    max-width: 90%;
+    box-sizing: border-box;
   }
 
   .cursor-icon {
@@ -349,9 +354,50 @@ section {
   .custom-hero-bg {
     padding: 25px 20px;
     border-radius: 20px;
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .about .buttons a {
+    border-width: 2px;
+    display: block;
+    font-size: 18px;
+    margin: 5px auto;
+    width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+
+  #mlh-trust-badge {
+    max-width: 50px;
+    right: 10px;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@media (max-width: 480px) {
+  .hero-tag,
+  .hero-script {
+    font-size: 2rem;
+  }
+
+  .hero .wrapper h1 {
+    font-size: 36px;
+  }
+
+  .hero .wrapper h3 {
+    font-size: 18px;
+  }
+
+  .hero-start {
+    font-size: 0.9rem;
+  }
 }
