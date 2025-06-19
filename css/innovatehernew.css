@@ -177,7 +177,7 @@ section {
 }
 
 .about .buttons {
-  margin: 40px auto 0;
+  margin: 30px auto 0;
   text-align: center;
 }
 
@@ -190,7 +190,7 @@ section {
   font-size: 22px;
   font-weight: 700;
   padding: 16px 40px; /* More vertical & horizontal padding */
-  margin: 12px 16px;  /* Less space around the button */
+  margin: 16px 16px;  /* Less space around the button */
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
