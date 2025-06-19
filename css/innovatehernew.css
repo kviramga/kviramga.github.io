@@ -309,7 +309,7 @@ section {
  * Responsive
  */
 @media (max-width: 768px) {
-  .hero .buttons a {
+  .about .buttons a {
     border-width: 2px;
     display: block;
     font-size: 18px;
