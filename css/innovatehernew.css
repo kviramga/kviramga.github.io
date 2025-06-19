@@ -118,7 +118,7 @@ img {
 .cursor-icon {
   width: clamp(16px, 4vw, 30px);
   height: auto;
-  position: absolute;
+  position: relative;
   bottom: -8px;
   right: -4px;
   pointer-events: none;
