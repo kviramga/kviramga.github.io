@@ -102,7 +102,7 @@ section {
 
 .hero-start {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 24px;
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   border: 2px solid black;
@@ -110,6 +110,9 @@ section {
   position: relative;
   cursor: pointer;
   color: black;
+  text-decoration: none; /* remove underline for <a> */
+  display: inline-block; /* ensures anchor behaves like button */
+  border-radius: 12px; /* optional: make it look more like a button */
 }
 
 .cursor-icon {
