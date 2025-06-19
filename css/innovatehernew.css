@@ -206,6 +206,7 @@ img {
   background-color: #0F2C34;
   color: #ffffff;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -241,7 +242,6 @@ img {
   background-color: #0F2C34;
   color: #ffffff;
 }
-
 
 /* Info Section */
 .info {
@@ -381,6 +381,13 @@ img {
     box-sizing: border-box;
   }
 
+  .cursor-icon {
+    width: 14px;
+    height: auto;
+    bottom: -4px;
+    right: -2px;
+  }
+
   .custom-hero-bg {
     padding: 25px 20px;
     border-radius: 20px;
@@ -395,15 +402,82 @@ img {
   .about p {
     font-size: 18px;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about .buttons {
+    width: 100%;
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  .about .buttons a {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  .button-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .btn-link {
+    width: 100%;
+    max-width: none;
   }
 
   #mlh-trust-badge {
     max-width: 50px;
     right: 10px;
   }
+
+  .info {
+    padding: 60px 20px;
+  }
+
+  .info .item {
+    padding: 15px 10px;
+  }
+
+  .info .item h1 {
+    font-size: 32px;
+  }
+
+  .info .item p {
+    font-size: 16px;
+  }
+
+  .faq {
+    padding: 60px 20px;
+  }
+
+  .faq h1 {
+    font-size: 32px;
+  }
+
+  .faq .question h2 {
+    font-size: 22px;
+  }
+
+  .faq .question p {
+    font-size: 16px;
+  }
+
+  .faq img {
+    width: 250px;
+    margin-top: 20px;
+  }
 }
 
-@media (max-width: 768px) {
+/* Smaller mobile devices */
+@media (max-width: 480px) {
   .hero-tag,
   .hero-script {
     font-size: 2rem;
@@ -419,13 +493,29 @@ img {
 
   .hero-start {
     font-size: 0.9rem;
+    padding: 6px 12px;
   }
 
   .cursor-icon {
-    width: 18px;
-    bottom: -6px;
-    right: 0;
+    width: 12px;
+    bottom: -3px;
+    right: -1px;
+  }
+
+  .custom-hero-bg {
+    padding: 20px 15px;
+    width: 95%;
+  }
+
+  .about {
+    padding: 60px 15px;
+  }
+
+  .about .buttons {
+    padding: 0 5px;
+  }
+
+  .buttons {
+    padding: 0 5px;
   }
 }
-
-
