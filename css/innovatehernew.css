@@ -175,8 +175,10 @@ section {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .about .buttons {
-  margin: 300px;
+  margin: 40px auto 0;
+  text-align: center;
 }
 
 .about .buttons a {
@@ -185,9 +187,10 @@ section {
   border-radius: 40px;
   color: #0F2C34;
   display: inline-block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  margin: 20px;
+  padding: 16px 40px; /* More vertical & horizontal padding */
+  margin: 12px 16px;  /* Less space around the button */
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
