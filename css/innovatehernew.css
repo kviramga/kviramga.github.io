@@ -116,11 +116,11 @@ img {
 }
 
 .cursor-icon {
-  position: absolute;
-  bottom: -15px;
-  right: -8px;
-  width: 30px;
+  width: clamp(12px, 4vw, 30px);
   height: auto;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
   pointer-events: none;
 }
 
