@@ -37,7 +37,7 @@ section {
  */
 #mlh-trust-badge {
   display: block;
-  max-width: 100px;
+  max-width: 80px;
   min-width: 60px;
   position: fixed;
   right: 50px;
