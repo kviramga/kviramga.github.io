@@ -382,9 +382,9 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 50px;
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .about .buttons a {
